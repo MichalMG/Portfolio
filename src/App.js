@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import './sass/style.scss';
+import '../node_modules/bootstrap/js/dist/collapse.js';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Home from './pages/Home/Home';
+import Navbar from './components/Navbar/Navbar';
+import Technologies from './pages/Technologies/Technologies';
+import Projects from './pages/Projects/Projects';
+import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
+import Layout from './components/Layout/Layout';
+
+
+
 
 function App() {
+
+  const header = (
+    <Navbar />
+  )
+  const content = (
+    <Switch>
+      <Route path='/technologies' component={Technologies} />
+      <Route path='/projects' component={Projects} />
+      <Route path='/contact' component={Contact} />
+      <Route exact path='/' component={Home} />
+    </Switch>
+  )
+  const footer = (
+    <Footer />
+  )
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Router>
+        <Layout
+          header={header}
+          content={content}
+          footer={footer}
+        />
+      </Router>
+    </>
+  )
 }
 
 export default App;

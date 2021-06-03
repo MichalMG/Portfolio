@@ -1,0 +1,166 @@
+.input__container2 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #aaa;
+
+  & input {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: text;
+  }
+
+
+  &-placeholder {
+    position: absolute;
+    top: calc(50%);
+    left: 14px;
+    transform: translateY(-50%);
+    transition: top .3s ease;
+  }
+
+  & input:valid+&-placeholder,
+  & input:focus+&-placeholder {
+    top: 10px;
+  }
+
+  & input {
+    border-radius: 3px;
+    background:
+      linear-gradient(90deg, map-get($custom-colors, "myorange"), map-get($custom-colors, "myorange")) center bottom/0 2px no-repeat,
+      linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)) left bottom/100% no-repeat !important;
+    transition: background-size .4s ease .1s;
+  }
+
+  & input:valid,
+  & input:focus {
+    background-size: 100% 2px, 100% !important;
+  }
+
+  &-validation-message {
+    position: absolute;
+    left: 14px;
+    bottom: -3px;
+    font-size: 14px;
+  }
+
+  &-ico {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// .input__container {
+//   display: inline-block;
+//   position: relative;
+//   padding-top: 20px;
+//   width: 100%;
+//   color: #aaa;
+
+//   &-title {
+//     position: absolute;
+//     top: calc(50% + 10px);
+//     left: 14px;
+//     transform: translateY(-50%);
+//     transition: top .3s ease, color .3s ease;
+//   }
+
+//   & input {
+//     border: none;
+//     outline: none;
+//     border-radius: 3px;
+//     cursor: text;
+//   }
+
+//   & input.form-control.is-invalid {
+//     border: none;
+//   }
+
+//   & input.form-control.is-valid {
+//     border: none;
+//   }
+
+//   & input:valid+&-title,
+//   & input:focus+&-title {
+//     top: 5px;
+//     color: #ccc;
+
+//   }
+
+//   &-border {
+//     position: absolute;
+//     top: 20px;
+//     left: 0;
+//     width: 100%;
+//     height: calc(100% - 20px);
+//     border-radius: 3px;
+//   }
+
+//   &-border::after,
+//   &-border::after,
+//   &-border::before,
+//   &-border::before {
+//     content: "";
+//     display: inline-block;
+//     position: absolute;
+//     width: 0;
+//     height: 0;
+//     border-radius: 3px;
+//   }
+
+//   &-border::after,
+//   &-border::after {
+//     left: 0;
+//     bottom: 0;
+//     border-bottom: 0 solid map-get($custom-colors, "myorange");
+//     border-right: 0 solid map-get($custom-colors, "myorange");
+//     transition: height .3s ease .6s, width .3s ease .9s, border-width 0s 1.2s;
+//   }
+
+
+
+//   &-border::before,
+//   &-border::before {
+//     top: 0;
+//     right: 0;
+//     border-top: 0 solid map-get($custom-colors, "myorange");
+//     border-left: 0 solid map-get($custom-colors, "myorange");
+//     transition: height .3s ease, width .3s ease .3s, border-width 0s .6s;
+//   }
+
+//   & input:valid~&-border::after,
+//   & input:focus~&-border::after,
+//   & input:focus~&-border::before,
+//   & input:valid~&-border::before {
+//     width: 100%;
+//     height: 100%;
+//     border-width: 2px;
+//   }
+
+//   & input:valid~&-border::after,
+//   & input:focus~&-border::after {
+//     transition: border-width 0s, width .3s ease, height .3s ease .3s;
+//   }
+
+//   & input:focus~&-border::before,
+//   & input:valid~&-border::before {
+//     transition: border-width 0s .6s, width .3s ease .6s, height .3s ease .9s;
+//   }
+
+// }

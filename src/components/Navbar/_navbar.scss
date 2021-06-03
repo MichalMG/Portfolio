@@ -1,0 +1,24 @@
+.link-contact-container {
+  border: 2px solid map-get($custom-colors, "myorange");
+  border-radius: 5px;
+  transition: .25s linear;
+
+  &:hover,
+  &.active {
+    border-color: map-get($custom-colors, "myorange");
+    color: map-get($custom-colors, "myorange") !important;
+  }
+}
+
+
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+a.active {
+  color: map-get($custom-colors, "myorange") !important;
+}

@@ -1,0 +1,31 @@
+.box-container {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+
+
+.box {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  & svg {
+    width: 80%;
+    height: auto;
+  }
+}
