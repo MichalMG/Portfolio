@@ -1,7 +1,7 @@
 .link-contact-container {
   border: 2px solid map-get($custom-colors, "myorange");
   border-radius: 5px;
-  transition: .25s linear;
+  transition: .5s ease;
 
   &:hover,
   &.active {
@@ -13,12 +13,60 @@
 
 a {
   font-weight: bold;
+  color: map-get($custom-colors, "mygray") !important;
+  transition: .5s ease !important;
 }
 
 a:hover {
-  color: #ddd;
+  color: map-get($custom-colors, "myorange") !important;
 }
 
 a.active {
   color: map-get($custom-colors, "myorange") !important;
+}
+
+
+.mainNavWrapper {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  transition: all 1s ease;
+
+
+  & .mainNav {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #000;
+    transition: all 1s ease;
+
+    & img {
+      transition: all 1s ease;
+    }
+  }
+
+}
+
+
+
+.mainNavWrapper.active {
+  height: 80px;
+  transition: all 1s ease;
+
+
+  & .mainNav {
+    position: fixed;
+    border-bottom: 1px solid map-get($custom-colors, "myorange");
+    transition: all 1s ease;
+
+
+    & img {
+      height: 65px;
+      transition: all 1s ease;
+
+    }
+  }
 }

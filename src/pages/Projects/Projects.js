@@ -70,25 +70,25 @@ export default function Projects() {
       const tl = gsap.timeline();
 
       tl.to(container, {
-        duration: 2,
+        duration: 1.5,
         scaleX: 1,
         ease: "power2.inOut"
       })
         .to(containerIfo, {
-          duration: 1,
+          duration: 0.75,
           opacity: 1,
-          delay: .5,
+          delay: .4,
           ease: "none"
         })
         .add("boxy")
         .to(containerImgAft, {
-          duration: 1,
+          duration: .75,
           transformOrigin: '0 0',
           right: '-100%',
           ease: 'none'
         })
         .to(containerImgBef, {
-          duration: 1,
+          duration: .75,
           transformOrigin: '100% 100%',
           left: '-100%',
           ease: 'none'

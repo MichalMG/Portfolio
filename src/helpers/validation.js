@@ -7,7 +7,6 @@ function email(value) {
 const validationRules = {
   email: function (value) {
     const mail = email(value);
-    console.log(mail);
     return mail ? "" : "Niepoprawny email"
   },
 

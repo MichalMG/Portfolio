@@ -1,7 +1,7 @@
 import './sass/style.scss';
 import '../node_modules/bootstrap/js/dist/collapse.js';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
