@@ -112,9 +112,7 @@ export default function Projects() {
 
   return (
     <div style={{ width: '100%' }}>
-      < p className="text-center display-6 mb-3 border-bottom border-1 border-mygreen text-mygray pb-2" > Projekty
-        <span className="text__header-border"></span>
-      </p>
+      < p className="text-center display-6 mb-3 border-bottom border-1 border-mygreen text-mygray pb-2" > Projekty      </p>
       <div className="container">
         <div ref={projectsContainer} className="row" >
 

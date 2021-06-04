@@ -97,7 +97,7 @@ export default function Contact() {
 
   return (
     <div style={{ width: '100%' }}>
-      <p className="text-center display-6 text__header mb-4">Kontakt</p>
+      < p className="text-center display-6 mb-3 border-bottom border-1 border-mygreen text-mygray pb-2" > Kontakt </p>
       <div className="position-relative">
         <div className="position-absolute" style={{ width: '100%', height: '100%', top: 0, left: 0, background: `url(${bgContact})`, backgroundPosition: 'center', backgroundSize: 'cover', filter: 'grayscale(0)', zIndex: -1 }}></div>
         <div className="position-absolute" style={{ width: '100%', height: '100%', top: 0, left: 0, backgroundColor: 'rgba(0,0,0,.6)', zIndex: -1 }}></div>

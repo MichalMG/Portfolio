@@ -12,6 +12,24 @@ export default function Navbar() {
     })
   }, [])
 
+  useEffect(() => {
+
+    const elements = navWrapper.current;
+
+    const liElements = elements.querySelectorAll('ul.navbar-nav > li');
+    const navbarCollapse = elements.querySelector('div.navbar-collapse');
+
+    liElements.forEach(element => {
+      element.addEventListener("click", () => {
+        if (navbarCollapse.classList.contains("show")) {
+          navbarCollapse.classList.remove("show");
+          window.scrollTo(0, 0);
+        }
+      })
+    })
+
+  }, [])
+
   return (
     <div ref={navWrapper} className="mainNavWrapper">
       <nav className="navbar navbar-expand-lg navbar-dark py-0 mb-4 mainNav">
@@ -24,9 +42,9 @@ export default function Navbar() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mb-2 mb-lg-0 ms-lg-auto d-flex align-items-start" >
+            <ul className="navbar-nav mb-2 mb-lg-0 ms-lg-auto  d-flex align-items-center" >
               <li className="nav-item mx-2">
-                <NavLink exact to="/" className="nav-link px-2">Home</NavLink>
+                <NavLink exact to="/" className="nav-link px-2">Strona główna</NavLink>
               </li>
               <li className="nav-item mx-2">
                 <NavLink to="/technologies" className="nav-link px-2">Technologie</NavLink>
