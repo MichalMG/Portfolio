@@ -25,10 +25,6 @@ export default function GsapText() {
     const textContainer = elements.querySelector('.text');
     const buttonsContainer = elements.querySelectorAll('.buttons-container > a');
 
-    // const btn1 = CSSRulePlugin.getRule(".buttons-container > a:nth-child(1)::before");
-    // const btn2 = CSSRulePlugin.getRule(".buttons-container > a:nth-child(2)::before");
-    // const btn3 = CSSRulePlugin.getRule(".buttons-container > a:nth-child(3)::before");
-
     let cursorTl = gsap.timeline({})
 
     cursorTl.set(cursor, {
@@ -94,19 +90,6 @@ export default function GsapText() {
         ease: 'power1.out',
         stagger: .2
       })
-      // .to([btn1, btn2, btn3], {
-      //   duration: 2,
-      //   top: "-75px",
-      //   ease: 'power1.out',
-      // })
-      // .to(btn2, {
-      //   duration: 1,
-      //   left: "150px",
-      // })
-      // .to(btn3, {
-      //   duration: 1,
-      //   left: "150px",
-      // })
       .add(cursorTl, "cursorBreak")
   }, [])
 

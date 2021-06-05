@@ -70,3 +70,9 @@ a.active {
     }
   }
 }
+
+@include media-breakpoint-down(lg) {
+  .mainNav {
+    border-bottom: 1px solid map-get($custom-colors, "myorange");
+  }
+}

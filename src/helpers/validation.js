@@ -30,15 +30,5 @@ export default function validation(value, rules) {
   }
 
   return '';
-  // switch (type) {
-  //   case 'email':
-  //     const checkMail = email(value);
-  //     return checkMail ? "" : "Niepoprawny adres email";
-  //   case 'name':
-  //     return value.length > 2 ? "" : "Minimum 3 litery"
-  //   default:
-  //     break;
-
-  // }
 
 }

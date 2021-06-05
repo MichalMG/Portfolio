@@ -5,7 +5,7 @@ export default function Project(props) {
 
   return (
     <div className="col-12" >
-      <div className="card bg-dark text-mygray mb-4 overflow-hidden border-0 card-container" style={props.order === "2" ? { boxShadow: ".5px .5px 5px black, 10px 10px #F28705" } : { boxShadow: "-.5px .5px 5px black, -10px 10px #F28705" }}>
+      <div className="card bg-dark text-mygray mb-4 overflow-hidden border-0 card-container" style={props.order === "2" ? { boxShadow: ".5px .5px 5px black, 10px 10px #3C8C03" } : { boxShadow: "-.5px .5px 5px black, -10px 10px #3C8C03" }}>
         <div className="row justify-content-between content-container">
           <div className={`col-12 col-sm-8 col-lg-5 img-container overflow-hidden ms-auto me-auto ms-lg-0 me-lg-0 ${props.order === "2" ? "order-lg-2" : "order-lg-1"}`}>
             <div className="after-box"></div>
@@ -18,7 +18,7 @@ export default function Project(props) {
                 <h5 className="card-title">{props.title}</h5>
                 <p className="card-text">{props.description}</p>
               </div>
-              {/* Technologies start */}
+
               <div className="d-flex justify-content-around mt-3">
 
                 {props.technology.map((technology, index) => {
@@ -103,7 +103,7 @@ export default function Project(props) {
                 })}
 
               </div>
-              {/* Technologies end */}
+
 
             </div>
             <div className="card-footer d-flex justify-content-between" style={{ flexGrow: 0 }}>

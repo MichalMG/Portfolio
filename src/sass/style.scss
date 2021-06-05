@@ -4,8 +4,11 @@
 @import '../components/Home/GsapLogo/gsapLogo.scss';
 @import '../components/Contact/GsapOffice/gsapOffice.scss';
 @import '../components/Navbar/navbar.scss';
-@import '../components/Layout/layout.scss';
-@import 'homepage.scss';
+@import '../Layout/layout.scss';
 @import '../components/Contact/contact.scss';
 @import '../components/Project/project.scss';
 @import '../pages/Technologies/technologies.scss';
+
+body {
+  background-color: #000;
+}

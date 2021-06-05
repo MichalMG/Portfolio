@@ -51,89 +51,63 @@ export default function Technologies() {
       <div className="container">
         <div className="row justify-content-center dev-ico-container">
 
-          {/* HTML start */}
           <TechIco>
             <HtmlSvg />
           </TechIco>
-          {/* HTML end */}
 
-          {/* CSS start */}
           <TechIco>
             <CssSvg />
           </TechIco>
-          {/* CSS end */}
 
-          {/* JS start */}
           <TechIco>
             <JsSvg />
           </TechIco>
-          {/* JS end */}
 
-          {/* React start */}
           <TechIco>
             <ReactSvg />
           </TechIco>
-          {/* React end */}
 
 
-          {/* Node.js start */}
           <TechIco>
             <NodeSvg />
           </TechIco>
-          {/* Node.js end */}
 
 
-          {/* SASS start */}
           <TechIco>
             <SassSvg />
           </TechIco>
-          {/* SASS end */}
 
 
-          {/* Bootstrap start */}
           <TechIco>
             <BootstrapSvg />
           </TechIco>
-          {/* Bootstrap end */}
 
 
-          {/* Firebase start */}
           <TechIco>
             <FirebaseSvg />
           </TechIco>
-          {/* Firebase end */}
 
 
-          {/* MongoDB start */}
           <TechIco>
             <MongoDbSvg />
           </TechIco>
-          {/* MongoDB end */}
 
 
-          {/* Express start */}
           <TechIco fill="#ffffff">
             <ExpressSvg />
           </TechIco>
-          {/* Express end */}
 
 
-          {/* Github start */}
           <TechIco>
             <GitHubSvg />
           </TechIco>
-          {/* Github end */}
 
 
-          {/* Figma start */}
           <TechIco>
             <FigmaSvg />
           </TechIco>
-          {/* Figma end */}
 
-          {/* GreenSock start */}
           <GreenSockIco />
-          {/* GreenSock end */}
 
         </div>
       </div>

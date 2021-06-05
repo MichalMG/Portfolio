@@ -9,7 +9,7 @@ import Technologies from './pages/Technologies/Technologies';
 import Projects from './pages/Projects/Projects';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
-import Layout from './components/Layout/Layout';
+import Layout from './Layout/Layout';
 
 
 
