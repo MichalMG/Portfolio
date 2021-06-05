@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+import { Link } from "react-router-dom";
 
 
 export default function GsapText() {
@@ -123,9 +124,9 @@ export default function GsapText() {
       </h1>
 
       <div className="buttons-container mt-4">
-        <a href="/technologies" className="btn btn-outline-myorange me-3">Technologie</a>
-        <a href="/projects" className="btn btn-outline-myorange me-3">Projekty</a>
-        <a href="/contact" className="btn btn-outline-myorange">Kontakt</a>
+        <Link to="/technologies" className="btn btn-outline-myorange me-3">Technologie</Link>
+        <Link to="/projects" className="btn btn-outline-myorange me-3">Projekty</Link>
+        <Link to="/contact" className="btn btn-outline-myorange">Kontakt</Link>
       </div>
 
     </div>

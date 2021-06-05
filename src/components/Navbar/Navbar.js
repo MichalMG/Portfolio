@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import companyLogo from '../../assets/svg/logo.svg'
 
 export default function Navbar() {
@@ -34,9 +34,9 @@ export default function Navbar() {
     <div ref={navWrapper} className="mainNavWrapper">
       <nav className="navbar navbar-expand-lg navbar-dark py-0 mb-4 mainNav">
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <img src={companyLogo} alt="company logo" width="auto" height="100px" className="d-inline-block align-text-top" />
-          </a>
+          </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

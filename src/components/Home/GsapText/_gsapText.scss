@@ -30,4 +30,9 @@
 .buttons-container>a {
   overflow: hidden;
   visibility: hidden;
+  color: map-get($custom-colors, "myorange") !important;
+}
+
+.buttons-container>a:hover {
+  color: black !important;
 }

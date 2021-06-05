@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import companyLogo from '../../assets/svg/logo.svg'
 import ContactSection from './ContactSection/ContactSection'
 
@@ -8,12 +9,12 @@ export default function Footer() {
     <footer className="pt-4 border-2 border-top border-myorange text-mygray" style={{ backgroundColor: 'rgba(255,255,255,.075)' }}>
       <div className="container" >
         <div className="row justify-content-around">
-          <div className="col-12 col-md-4 d-flex align-items-center justify-content-center order-2 order-md-1 py-2">
+          <div className="col-12 col-md-4 d-flex align-items-center justify-content-center order-2 order-md-1 my-3 my-md-2">
             <img src={companyLogo} alt="company logo" style={{ width: 'auto', height: '100px' }} />
           </div>
 
           <div className="col-12 col-md-4 align-items-center d-flex order-1 order-md-2">
-            <p>Wszystkich zainteresowanych współpracą zapraszam do kontaktu, chętnie odpowiem na wszystkie pytania, dla ułatwienia w zakładce kontakt znajduje się formularz kontaktowy z którego można skorzystać.</p>
+            <p className="mb-0">Wszystkich zainteresowanych współpracą zapraszam do kontaktu przez <Link to="/contact" style={{ textDecoration: "none" }}>formularz kontaktowy</Link> lub mailowo</p>
           </div>
 
           <div className="col-12 col-md-4 d-flex justify-content-center order-3">
