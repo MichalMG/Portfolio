@@ -11,21 +11,6 @@
 }
 
 
-a {
-  font-weight: bold;
-  color: map-get($custom-colors, "mygray") !important;
-  transition: .5s ease !important;
-}
-
-a:hover {
-  color: map-get($custom-colors, "myorange") !important;
-}
-
-a.active {
-  color: map-get($custom-colors, "myorange") !important;
-}
-
-
 .mainNavWrapper {
   position: relative;
   width: 100%;
@@ -42,6 +27,21 @@ a.active {
     z-index: 100;
     background-color: #000;
     transition: all 1s ease;
+
+
+    a {
+      font-weight: bold;
+      color: map-get($custom-colors, "mygray") !important;
+      transition: .5s ease !important;
+    }
+
+    a:hover {
+      color: map-get($custom-colors, "myorange") !important;
+    }
+
+    a.active {
+      color: map-get($custom-colors, "myorange") !important;
+    }
 
     & img {
       transition: all 1s ease;
