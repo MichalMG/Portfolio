@@ -107,9 +107,9 @@ export default function GsapText() {
       </h1>
 
       <div className="buttons-container mt-4">
-        <Link to="/technologies" className="btn btn-outline-myorange me-3">Technologie</Link>
-        <Link to="/projects" className="btn btn-outline-myorange me-3">Projekty</Link>
-        <Link to="/contact" className="btn btn-outline-myorange">Kontakt</Link>
+        <Link onClick={() => window.scrollTo(0, 0)} to="/technologies" className="btn btn-outline-myorange me-3">Technologie</Link>
+        <Link onClick={() => window.scrollTo(0, 0)} to="/projects" className="btn btn-outline-myorange me-3">Projekty</Link>
+        <Link onClick={() => window.scrollTo(0, 0)} to="/contact" className="btn btn-outline-myorange">Kontakt</Link>
       </div>
 
     </div>

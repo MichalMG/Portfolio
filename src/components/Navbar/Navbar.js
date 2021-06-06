@@ -34,7 +34,7 @@ export default function Navbar() {
     <div ref={navWrapper} className="mainNavWrapper">
       <nav className="navbar navbar-expand-lg navbar-dark py-0 mb-4 mainNav">
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <Link onClick={() => window.scrollTo(0, 0)} className="navbar-brand" to="/">
             <img src={companyLogo} alt="company logo" width="auto" height="100px" className="d-inline-block align-text-top" />
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -14,7 +14,7 @@ export default function Footer() {
           </div>
 
           <div className="col-12 col-md-4 align-items-center d-flex order-1 order-md-2">
-            <p className="mb-0">Wszystkich zainteresowanych współpracą zapraszam do kontaktu przez <Link to="/contact" style={{ textDecoration: "none" }}>formularz kontaktowy</Link> lub mailowo</p>
+            <p className="mb-0">Wszystkich zainteresowanych współpracą zapraszam do kontaktu przez <Link onClick={() => window.scrollTo(0, 0)} to="/contact" className="text-mygray fw-bold" style={{ textDecoration: "none" }}>formularz kontaktowy</Link> lub mailowo</p>
           </div>
 
           <div className="col-12 col-md-4 d-flex justify-content-center order-3">
