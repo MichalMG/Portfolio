@@ -2,8 +2,8 @@ import { useEffect } from "react";
 
 export default function useWebTitle(title) {
 
-  const setTitle = (title) => {
-    document.title = title;
+  const setTitle = (newTitle) => {
+    document.title = newTitle;
   }
 
   useEffect(() => {

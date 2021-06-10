@@ -23,8 +23,8 @@ export default function Navbar() {
       element.addEventListener("click", () => {
         if (navbarCollapse.classList.contains("show")) {
           navbarCollapse.classList.remove("show");
-          window.scrollTo(0, 0);
         }
+        window.scrollTo(0, 0);
       })
     })
 
