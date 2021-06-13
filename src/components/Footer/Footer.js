@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-4 text-center" style={{ backgroundColor: 'black', color: "#555" }}>
-        <p className="py-2 mb-0">Copyright by MG</p>
+        <p className="m-0 py-1">Copyright  <a className="link-success text-decoration-none" href="https://michalmg.github.io/Portfolio/">MG</a></p>
       </div>
     </footer>
   )

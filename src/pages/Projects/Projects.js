@@ -20,32 +20,32 @@ export default function Projects() {
     technology: ['html', 'js', 'css', 'bootstrap', 'react', 'firebase'],
     title: 'NotesApp',
     description: 'W pełni responsywna strona, która pozwala nam na rejestracje, logowanie, edycję oraz usuwanie użytkownika, sesja użytkownika jest zapisana w localstorage oraz trwa 60 minut. W aplikacji można dodawać, edytować usuwać oraz personalizować notatki, które są przypisane do aktualnie zalogowanego użytkownika (obsługa- firebase)',
-    liveView: 'https://www.onet.pl',
-    githubLink: 'https://www.onet.pl'
+    liveView: 'michalmg.github.io/Notes/',
+    githubLink: 'https://github.com/MichalMG/Notes'
   }, {
     image: project2,
     imgInfo: 'projekt 2',
     technology: ['html', 'js', 'css', 'bootstrap', 'react'],
     title: 'Projekt fermy drobiu, sprzedaży jajek',
-    description: 'Strona zaprojektowana dla firmy, która zajmuje się sprzedażą jajek. Strona responsywna, w calości zaprojektowana i wykonana, wypełniona przykładowym tekstem.',
-    liveView: 'https://www.onet.pl',
-    githubLink: 'https://www.onet.pl'
+    description: 'Strona zaprojektowana dla firmy, która zajmuje się sprzedażą jajek. W pełni responsywna strona. Strona przygotowana do publikacji, została stworzona do portfolio. Stronę w całości zaprojektowałem i zakodowałem.',
+    liveView: 'https://michalmg.github.io/Eggs',
+    githubLink: 'https://github.com/MichalMG/Eggs'
   }, {
     image: project3,
     imgInfo: 'projekt 3',
     technology: ['html', 'js', 'css', 'bootstrap', 'react'],
-    title: 'Projekt firmy budowlanej/Usługi koparko-ładowarką',
-    description: 'Strona zaprojektowana dla firmy świadczącej usługi koparko ładowarką oraz usługi budowlane. Projekt został oparty na Reacie, w pełni responsywny..',
-    liveView: 'https://www.onet.pl',
-    githubLink: 'https://www.onet.pl'
+    title: 'Projekt strony firmy budowlanej/Usługi koparko-ładowarką',
+    description: 'Strona zaprojektowana dla firmy budowlanej/świadczącej usługi koparko ładowarką. W pełni responsywna strona, wraz z działającym formularzem kontaktowym (z validacją) opartym na EmailJS. Strona przygotowana do publikacji, została stworzona do portfolio. Stronę w całości zaprojektowałem i zakodowałem',
+    liveView: 'https://michalmg.github.io/Appbud/',
+    githubLink: 'https://github.com/MichalMG/Appbud'
   }, {
     image: project4,
     imgInfo: 'projekt 4',
     technology: ['html', 'js', 'css', 'bootstrap', 'react'],
     title: 'WeatherApp',
-    description: 'Responsywna strona, która przedstawia aktualną prognozę pogody dla wyszukanego miasta, która jest wczytywana z zewnętrznego API',
-    liveView: 'https://www.onet.pl',
-    githubLink: 'https://www.onet.pl'
+    description: 'Responsywna strona, która przedstawia aktualną prognozę pogody dla wyszukanego miasta wczytywaną z zewnętrznego API',
+    liveView: 'https://michalmg.github.io/WeatherApp/',
+    githubLink: 'https://github.com/MichalMG/WeatherApp'
   }]
 
   const projectsContainer = useRef();
