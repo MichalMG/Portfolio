@@ -4,7 +4,7 @@ import ProjectIco from "../Icons/ProjectIco/ProjectIco"
 export default function Project(props) {
 
   return (
-    <div className="col-12" >
+    <div className="col-12" style={{ zIndex: 3 }}>
       <div className="card bg-dark text-mygray mb-4 overflow-hidden border-0 card-container" style={props.order === "2" ? { boxShadow: ".5px .5px 5px black, 10px 10px #3C8C03" } : { boxShadow: "-.5px .5px 5px black, -10px 10px #3C8C03" }}>
         <div className="row justify-content-between content-container">
           <div className={`col-12 col-sm-8 col-lg-5 img-container overflow-hidden ms-auto me-auto ms-lg-0 me-lg-0 ${props.order === "2" ? "order-lg-2" : "order-lg-1"}`}>

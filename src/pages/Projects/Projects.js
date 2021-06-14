@@ -20,7 +20,7 @@ export default function Projects() {
     technology: ['html', 'js', 'css', 'bootstrap', 'react', 'firebase'],
     title: 'NotesApp',
     description: 'W pełni responsywna strona, która pozwala nam na rejestracje, logowanie, edycję oraz usuwanie użytkownika, sesja użytkownika jest zapisana w localstorage oraz trwa 60 minut. W aplikacji można dodawać, edytować usuwać oraz personalizować notatki, które są przypisane do aktualnie zalogowanego użytkownika (obsługa- firebase)',
-    liveView: 'michalmg.github.io/Notes/',
+    liveView: 'https://michalmg.github.io/Notes/',
     githubLink: 'https://github.com/MichalMG/Notes'
   }, {
     image: project2,
@@ -49,6 +49,8 @@ export default function Projects() {
   }]
 
   const projectsContainer = useRef();
+  const mouse = useRef();
+  const mouseContainer = useRef();
 
   useEffect(() => {
 
@@ -101,18 +103,64 @@ export default function Projects() {
 
     document.addEventListener("scroll", () => {
       for (let i = 1; i < elements.length; i++) {
-        if (window.scrollY >= (elements[i - 1].querySelector('div.card').offsetTop)) {
+        if (window.scrollY >= (elements[i - 1].querySelector('div.card').offsetTop - 150)) {
           animationProjectHandler(elements[i], i);
         }
       }
     })
 
   }, [])
+  useEffect(() => {
+    const mouseScroll = mouse.current;
+    const tl = gsap.timeline({ repeat: -1 });
+
+    tl.set(mouseScroll, {
+      transform: 'translateY(0)',
+      opacity: 0,
+    })
+
+    tl.to(mouseScroll, {
+      duration: .3,
+      opacity: 1,
+    })
+      .fromTo(mouseScroll, {
+        transform: 'translateY(0)',
+      }, {
+        duration: .75,
+        transform: 'translateY(7px)',
+        ease: 'none'
+      })
+      .to(mouseScroll, {
+        duration: .3,
+        opacity: 0,
+      });
+  }, [])
 
 
   return (
     <div style={{ width: '100%' }}>
-      < p className="text-center display-6 mb-3 border-bottom border-1 border-mygreen text-mygray pb-2" > Projekty      </p>
+      < p className="text-center display-6 mb-3 border-bottom border-1 border-mygreen text-mygray pb-2 position-relative" > Projekty
+        <svg className="position-relative" style={{ left: '25px' }} fill="currentColor" version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="50px" height="50px" viewBox="0 0 16 16" enableBackground="new 0 0 16 16" xmlSpace="preserve">
+          <path className="text-dark" id="mouse" d="M12,11c0,2.209-1.791,4-4,4s-4-1.791-4-4V5c0-2.209,1.791-4,4-4s4,1.791,4,4V11z M8,0C5.239,0,3,2.239,3,5v6
+	c0,2.762,2.239,5,5,5c2.762,0,5-2.238,5-5V5C13,2.239,10.762,0,8,0z"/>
+          <path ref={mouse} className="text-mygreen" id="scroll" d="M8,3c0.276,0,0.5,0.224,0.5,0.5v2C8.5,5.776,8.276,6,8,6S7.5,5.776,7.5,5.5v-2C7.5,3.224,7.724,3,8,3z" />
+        </svg>
+      </p>
+
+
+      {/* < p className="text-center display-6 mb-3 border-bottom border-1 border-mygreen text-mygray pb-2" > Projekty      </p>
+
+      <div ref={mouseContainer} style={{ position: 'fixed', left: '50%', bottom: '20%', zIndex: 1, transform: 'translateX(-50%)' }}>
+        <div className="text-dark">
+          <svg fill="currentColor" version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="70px" height="70px" viewBox="0 0 16 16" enableBackground="new 0 0 16 16" xmlSpace="preserve">
+            <path id="mouse" d="M12,11c0,2.209-1.791,4-4,4s-4-1.791-4-4V5c0-2.209,1.791-4,4-4s4,1.791,4,4V11z M8,0C5.239,0,3,2.239,3,5v6
+	c0,2.762,2.239,5,5,5c2.762,0,5-2.238,5-5V5C13,2.239,10.762,0,8,0z"/>
+            <path ref={mouse} className="text-mygreen" id="scroll" d="M8,3c0.276,0,0.5,0.224,0.5,0.5v2C8.5,5.776,8.276,6,8,6S7.5,5.776,7.5,5.5v-2C7.5,3.224,7.724,3,8,3z" />
+          </svg>
+        </div>
+      </div> */}
       <div className="container">
         <div ref={projectsContainer} className="row" >
 
