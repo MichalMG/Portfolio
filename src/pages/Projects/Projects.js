@@ -35,7 +35,7 @@ export default function Projects() {
     imgInfo: 'projekt 3',
     technology: ['html', 'js', 'css', 'bootstrap', 'react'],
     title: 'Projekt strony firmy budowlanej/Usługi koparko-ładowarką',
-    description: 'Strona zaprojektowana dla firmy budowlanej/świadczącej usługi koparko ładowarką. W pełni responsywna strona, wraz z działającym formularzem kontaktowym (z validacją) opartym na EmailJS. Strona przygotowana do publikacji, została stworzona do portfolio. Stronę w całości zaprojektowałem i zakodowałem',
+    description: 'Strona zaprojektowana dla firmy budowlanej/świadczącej usługi koparko ładowarką. W pełni responsywna strona, wraz z działającym formularzem kontaktowym opartym na EmailJS (dodatkowo formularz posiada walidację). Strona przygotowana do publikacji, została stworzona do portfolio. Stronę w całości zaprojektowałem i zakodowałem',
     liveView: 'https://michalmg.github.io/Appbud/',
     githubLink: 'https://github.com/MichalMG/Appbud'
   }, {

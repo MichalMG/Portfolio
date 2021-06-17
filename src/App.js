@@ -8,10 +8,8 @@ import Navbar from './components/Navbar/Navbar';
 import Technologies from './pages/Technologies/Technologies';
 import Projects from './pages/Projects/Projects';
 import Footer from './components/Footer/Footer';
-import Contact from './components/Contact/Contact';
+import Contact from './pages/Contact/Contact';
 import Layout from './Layout/Layout';
-
-
 
 
 function App() {

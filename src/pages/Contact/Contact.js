@@ -1,9 +1,9 @@
 import { useState } from "react";
 import axios from 'axios';
 import bgContact from '../../assets/bg_contact.jpg'
-import GsapOffice from "./GsapOffice/GsapOffice";
+import GsapOffice from "../../components/Contact/GsapOffice/GsapOffice";
 import validation from "../../helpers/validation";
-import Input from "./Input/Input";
+import Input from "../../components/Contact/Input/Input";
 import useWebTitle from "../../hook/useWebTitle";
 
 const API_URL = 'https://api.emailjs.com/api/v1.0/email/send';
@@ -51,10 +51,11 @@ export default function Contact() {
     if (formIsValid) return;
     setLoading(true);
 
+
     const data = {
-      service_id: 'service_f2z9ahd',
-      template_id: 'template_3igjzo2',
-      user_id: 'user_cmCNSI8eUPnr8NHznf8hc',
+      service_id: process.env.REACT_APP_SERVICE_ID,
+      template_id: process.env.REACT_APP_TEMPLATE_ID,
+      user_id: process.env.REACT_APP_USER_ID,
       template_params: {
         'username': form.name.value,
         'message': form.textarea.value,
@@ -65,7 +66,10 @@ export default function Contact() {
 
     const send = await axios.post(API_URL, data)
 
-    if (send.status === 200) {
+    if (send.status !== 200) {
+      setLoading(false);
+      setEmailInfo("Niestety nie udało się wysłać wiadomości. Spróbuj jeszcze raz");
+    } else {
       setLoading(false);
       setEmailInfo("Wiadomość została wysłana");
       setForm({
@@ -88,9 +92,6 @@ export default function Contact() {
           message: ""
         }
       })
-    } else {
-      setLoading(false);
-      setEmailInfo("Niestety nie udało się wysłać wiadomości. Spróbuj jeszcze raz");
     }
   }
 
