@@ -1,4 +1,25 @@
-Live: https://michalmg.github.io/Portfolio/
+### Live: https://michalmg.github.io/Portfolio/
 
-Projekt strony firmy budowlanej/Usługi koparko-ładowarką
-W pełni responsywna strona, wraz z działającym formularzem kontaktowym opartym na EmailJS (dodatkowo formularz posiada walidację). Strona przygotowana do publikacji, została stworzona do portfolio. Stronę w całości zaprojektowałem i zakodowałem.
+# Portfolio
+
+##### Storna wizytówka. Stronę w całości zaprojektowałem i zakodowałem.
+
+#### HTML, CSS, JS, React, Bootstrap, NPM, Node.js, SASS, EmailJS
+
+#### Development
+```
+1. Pobierz kopię repozytorium
+2. Zainstaluj brakujące paczki: npm install
+3. Uruchom projekt: npm start
+```
+
+# Screenshots
+
+### Desktop: 
+
+<img src="https://github.com/MichalMG/Portfolio/blob/master/Screenshots/desktop.jpg" /> <img src="https://github.com/MichalMG/Portfolio/blob/master/Screenshots/desktop2.jpg" />
+    
+### Mobile:  
+
+  <img src="https://github.com/MichalMG/Portfolio/blob/master/Screenshots/mobile.jpg" width="49%" /> <img src="https://github.com/MichalMG/Portfolio/blob/master/Screenshots/mobile2.jpg"  width="49%" />
+  
